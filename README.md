@@ -2,13 +2,17 @@
 
 ## Status
 
-**Stage**: 0  
+**Stage**: 1  
 **Champion**: Pablo Gorostiaga Belio ([@gorosgobe](https://github.com/gorosgobe))  
 
 ## Author
 Pablo Gorostiaga Belio ([@gorosgobe](https://github.com/gorosgobe))
 
 # Proposal
+
+Presentations
+
+- [September 2023](https://docs.google.com/presentation/d/1vwNOjUiUvy6TzK6t0Mb8qgyKwBNszly9HibJJpUa_Eo/edit) 
 
 ## Motivation
 
