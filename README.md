@@ -42,7 +42,7 @@ For `in`:
 ```js
 if (!a in obj) { 
   // will not execute, unless obj has a 'true' or 'false' key
-  // `in` accepts strings or symbols as the lhs parameter, and otherwise coerces all other values to a string
+  // `in` accepts strings or symbols as the LHS parameter, and otherwise coerces all other values to a string
   // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#string_coercion
 }
 
@@ -121,7 +121,7 @@ The negation of these expressions is not aligned with operators which have a neg
 
 ### Readability
 
-To negate the result of an `in`/`instanceof` expression, we introduce an additional grouping operator (denoted by two parentheses). In addition, the `not` is at the beginning of the expression, unlike how this would be read in natural english. Together, both of these factors result in less readable code.
+To negate the result of an `in`/`instanceof` expression, we introduce an additional grouping operator (denoted by two parentheses). In addition, the `not` is at the beginning of the expression, unlike how this would be read in natural English. Together, both of these factors result in less readable code.
 
 ### Worse developer experience
 
@@ -151,7 +151,7 @@ is equivalent to
 !(a instanceof obj);
 ```
 
-- Safer: No longer need to introduce additional grouping, and the negation is applied directly to the operator, as opposed to applying it next to the lhs operand in the expression.
+- Safer: No longer need to introduce additional grouping, and the negation is applied directly to the operator, as opposed to applying it next to the LHS operand in the expression.
 - Improved readability: No longer requires extra grouping to negate the result of the expression. This is aligned with other operators such as `!==`. Reads more naturally and is more intuitive.
 - Better developer experience: Again, easier to change when refactoring code - a single `!` needs to be added to negate the expression.
 
