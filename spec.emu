@@ -22,9 +22,9 @@ contributors: Pablo Gorostiaga Belio
         RelationalExpression[?In, ?Yield, ?Await] `&lt;=` ShiftExpression[?Yield, ?Await]
         RelationalExpression[?In, ?Yield, ?Await] `&gt;=` ShiftExpression[?Yield, ?Await]
         RelationalExpression[?In, ?Yield, ?Await] `instanceof` ShiftExpression[?Yield, ?Await]
-        <ins>RelationalExpression[?In, ?Yield, ?Await] `!instanceof` ShiftExpression[?Yield, ?Await]</ins>
+        <ins>RelationalExpression[?In, ?Yield, ?Await] `not instanceof` ShiftExpression[?Yield, ?Await]</ins>
         [+In] RelationalExpression[+In, ?Yield, ?Await] `in` ShiftExpression[?Yield, ?Await]
-        <ins>[+In] RelationalExpression[+In, ?Yield, ?Await] `!in` ShiftExpression[?Yield, ?Await]</ins>
+        <ins>[+In] RelationalExpression[+In, ?Yield, ?Await] `not in` ShiftExpression[?Yield, ?Await]</ins>
         [+In] PrivateIdentifier `in` ShiftExpression[?Yield, ?Await]
     </emu-grammar>
     <emu-note>
@@ -78,7 +78,7 @@ contributors: Pablo Gorostiaga Belio
         1. Return ? InstanceofOperator(_lval_, _rval_).
       </emu-alg>
       <ins class="block">
-        <emu-grammar>RelationalExpression : RelationalExpression `!instanceof` ShiftExpression</emu-grammar>
+        <emu-grammar>RelationalExpression : RelationalExpression `not instanceof` ShiftExpression</emu-grammar>
         <emu-alg>
           1. Let _lref_ be ? Evaluation of |RelationalExpression|.
           1. Let _lval_ be ? GetValue(_lref_).
@@ -98,7 +98,7 @@ contributors: Pablo Gorostiaga Belio
         1. Return ? HasProperty(_rval_, ? ToPropertyKey(_lval_)).
       </emu-alg>
       <ins class="block">
-        <emu-grammar>RelationalExpression : RelationalExpression `!in` ShiftExpression</emu-grammar>
+        <emu-grammar>RelationalExpression : RelationalExpression `not in` ShiftExpression</emu-grammar>
         <emu-alg>
           1. Let _lref_ be ? Evaluation of |RelationalExpression|.
           1. Let _lval_ be ? GetValue(_lref_).
