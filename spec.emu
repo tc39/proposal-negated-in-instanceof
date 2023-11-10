@@ -24,7 +24,7 @@ contributors: Pablo Gorostiaga Belio
         RelationalExpression[?In, ?Yield, ?Await] `instanceof` ShiftExpression[?Yield, ?Await]
         <ins>RelationalExpression[?In, ?Yield, ?Await] `!instanceof` ShiftExpression[?Yield, ?Await]</ins>
         [+In] RelationalExpression[+In, ?Yield, ?Await] `in` ShiftExpression[?Yield, ?Await]
-        <ins>[+In] RelationalExpression[+In, ?Yield, ?Await] `!in` ShiftExpression[?Yield, ?Await]</ins>
+        <ins>RelationalExpression[?In, ?Yield, ?Await] `!in` ShiftExpression[?Yield, ?Await]</ins>
         [+In] PrivateIdentifier `in` ShiftExpression[?Yield, ?Await]
     </emu-grammar>
     <emu-note>
